@@ -23,11 +23,32 @@ const startGame = () => {
 // Задаем функцию описывающую поведение по клику
 // Она должна чередовать крестики и нолики, менять цвет и отслеживать победу
 function boxClicked(e) {
-    const id = e.target.id
+    const id = e.target.id     
 
     if(!spaces[id] && playerHasWon() == false){
-        spaces[id] = currentPlayer
-        e.target.innerText = currentPlayer
+        spaces[id] = currentPlayer;
+        e.target.innerText = currentPlayer;
+
+        if(playerHasWon() !==false && currentPlayer == X_TEXT){
+            playerText.innerHTML = `${currentPlayer} has won!`
+            let winning_blocks = playerHasWon()
+            e.target.style.color=player1Color;
+            e.target.classList.remove('neon-text2');
+            e.target.classList.add('neon-text');
+            winning_blocks.map( box => boxes[box].style.backgroundColor=winnerIndicator)
+            return
+        };
+
+        if(playerHasWon() !==false && currentPlayer == O_TEXT){
+            playerText.innerHTML = `${currentPlayer} has won!`
+            let winning_blocks = playerHasWon()
+            e.target.style.color=player2Color;
+            e.target.classList.remove('neon-text');
+            e.target.classList.add('neon-text2');
+            winning_blocks.map( box => boxes[box].style.backgroundColor=winnerIndicator)
+            return
+        };
+
 
         if (currentPlayer == X_TEXT) {
             currentPlayer = O_TEXT;
@@ -39,16 +60,8 @@ function boxClicked(e) {
             e.target.style.color=player2Color;
             e.target.classList.remove('neon-text');
             e.target.classList.add('neon-text2');
-        }
-
-        if(playerHasWon() !==false){
-            playerText.innerHTML = `${currentPlayer} has won!`
-            let winning_blocks = playerHasWon()
-
-            winning_blocks.map( box => boxes[box].style.backgroundColor=winnerIndicator)
-            return
-        }        
-    }
+        }             
+    }     
 };
 
 // Описываем выйгрышные комбинации горизонтальные, вертикальные и диагональные
