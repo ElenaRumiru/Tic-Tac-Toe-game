@@ -1,0 +1,85 @@
+:root {
+    --blue: rgb(253, 253, 253);
+    --purple: rgb(247, 85, 225);
+    --winning-blocks: rgb(38, 41, 41);
+}
+
+
+body {
+    color: var(--blue);
+    font-family: 'Shock Brat';
+}
+h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(50, 61, 61);
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 110px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #fff;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--winning-blocks);
+    color: #333;
+    border-color: var(--winning-blocks);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 11px #0fa,
+      0 0 20px #0fa,
+      0 0 30px #0fa,
+      0 0 80px #0fa;
+  }
+
+  .neon-text2 {
+    color: #fff;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 11px rgb(252, 154, 252),
+      0 0 20px rgb(252, 154, 252),
+      0 0 30px rgb(252, 154, 252),
+      0 0 80px rgb(252, 154, 252);
+  }
