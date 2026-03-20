@@ -14,7 +14,9 @@
 <div align="center"> 
 <img width="670" height="555" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/706e0db1-32eb-44f4-b252-2dd5ad37ef4e" />
 </div>
+
 ---
+
 ## About
 
 Two-player Tic Tac Toe with a stunning **neon glow** aesthetic. Hand-drawn glowing X's and O's bring a fresh visual spin to the classic 3x3 game. Green neon for X, pink neon for O — played in a dark, atmospheric setting.
