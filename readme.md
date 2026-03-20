@@ -11,8 +11,9 @@
 </div>
 
 ---
+<div align="center"> 
 <img width="670" height="555" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/706e0db1-32eb-44f4-b252-2dd5ad37ef4e" />
-
+</div>
 ---
 ## About
 
