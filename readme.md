@@ -11,7 +11,7 @@
 </div>
 
 ---
-<img width="970" height="855" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/706e0db1-32eb-44f4-b252-2dd5ad37ef4e" />
+<img width="570" height="455" alt="tic-tac-toe" src="https://github.com/user-attachments/assets/706e0db1-32eb-44f4-b252-2dd5ad37ef4e" />
 
 ---
 ## About
