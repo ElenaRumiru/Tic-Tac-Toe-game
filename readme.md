@@ -77,7 +77,7 @@ src/
 
 <div align="center">
 
-Made by Elena Rumiru, 2023
+Made by Elena Rumiru, 2021
 
 **[Play Tic Tac Toe](https://elenarumiru.github.io/Tic-Tac-Toe-game/)**
 
